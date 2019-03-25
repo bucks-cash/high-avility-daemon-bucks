@@ -1,0 +1,35 @@
+{
+  "name": "buckscash-ha",
+  "version": "0.12.1",
+  "description": "Wraps the bucks Daemon and helps keep the daemon synchronized and ready for connections.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node checkpoints.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buckscash/buckscash-ha.git"
+  },
+  "keywords": [
+    "bucks",
+    "wrapper",
+    "high-availability",
+    "API",
+    "RPC",
+    "websocket"
+  ],
+  "author": "Carl Sanx based in Brandon Lehmann project",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "node-pty": "^0.7.8",
+    "nonce": "^1.0.4",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
+    "sha256": "^0.2.0",
+    "shelljs": "^0.8.3",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
